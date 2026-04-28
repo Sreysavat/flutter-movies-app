@@ -16,6 +16,8 @@ A mobile application built with Flutter that displays movie/news content using A
 - GetX
 
 ## 📱 Screens
+- Login
+- Register
 - Home Screen (list of news/movies)
 - Details Screen
 
