@@ -14,6 +14,9 @@ class HomeView extends GetView<HomeController> {
       appBar: AppBar(
         title:  Text('news'.tr),
         centerTitle: true,
+        leading: TextButton(onPressed: (){
+          Get.toNamed(Routes.LOGIN);
+        }, child: Icon(Icons.logout,size: 22,)),
         actions: [
           TextButton(onPressed: controller.chooseYourLang, child: Icon(Icons.language,size: 22,)),
           TextButton(onPressed: controller.changeTheme, child: Icon(Icons.dark_mode,size: 22,))
