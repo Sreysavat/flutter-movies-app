@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:sbay_news_app/app/dependency_injection.dart';
 import 'package:sbay_news_app/widget/form_cus_log.dart';
 
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
-  const LoginView({super.key});
+   LoginView({super.key});
   @override
   Widget build(BuildContext context) {
+    DependencyInjection.init();
     return Scaffold(
       body: Stack(
         children: [

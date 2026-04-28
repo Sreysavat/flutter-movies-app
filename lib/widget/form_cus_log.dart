@@ -6,6 +6,7 @@ import 'package:sbay_news_app/app/routes/app_pages.dart';
 import '../app/modules/login/controllers/login_controller.dart';
 
 class FormCusLog extends GetView<LoginController>  {
+  final controller = Get.put(LoginController());
    FormCusLog({super.key});
   final String imageEmail = "assets/images/google.png";
   final _formKey = GlobalKey<FormState>();

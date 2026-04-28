@@ -39,6 +39,7 @@ dependencies:
   intl: any
   flutter_native_splash: ^2.4.7
   connectivity_plus: ^6.0.3
+  flutter_flavorizr: ^2.4.2
 
 dependency_overrides:
   path_provider_android: 2.2.23
@@ -98,3 +99,25 @@ assets:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flavorizr:
+  flavors:
+    dev:
+      app:
+        name: "SabayNews-dev"
+
+      android:
+        applicationId: "com.sabay.dev"
+      ios:
+        bundleId: "com.sabay.dev"
+      macos:
+        bundleId: "com.sabay.dev"
+    prod:
+      app:
+        name: "Sabay-News"
+
+      android:
+        applicationId: "com.sabaynews.app"
+      ios:
+        bundleId: "com.sabaynews.app"
+      macos:
+        bundleId: "com.sabaynews.app"

@@ -3,6 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:sbay_news_app/app/config/app_config.dart';
 
+import '../../../flavors.dart';
 import '../model/req/login_req.model.dart';
 import '../model/req/register_req.model.dart';
 class AuthProvider extends GetxService{
@@ -15,7 +16,7 @@ late Dio _dio;
   void _initializeDio(){
     _dio =Dio(
         BaseOptions(
-            baseUrl:"${kBaseUrlLog}/api",
+            baseUrl:"${F.baseUrl}/api",
             followRedirects: false,
             validateStatus: (status){
               return status! <500;
